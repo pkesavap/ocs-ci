@@ -443,7 +443,7 @@ class TestSmallFileWorkload(E2ETest):
         test_start_time = time.time()
 
         # After testing manually, changing the timeout
-        timeout = 3600
+        timeout = 3600 * 12
 
         # Getting the UUID from inside the benchmark pod
         uuid = ripsaw.get_uuid(small_file_client_pod)
